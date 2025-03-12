@@ -10,6 +10,8 @@
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     --section-bg: #f9f9fc;
     --border-light: #eaeaea;
+    --link-color: #0066cc;
+    --link-hover: #004499;
 }
 
 * {
@@ -34,6 +36,12 @@ body {
 header {
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.author {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
 }
 
 #sun-animation {
@@ -73,6 +81,18 @@ h4 {
 p {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--link-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--link-hover);
+    border-bottom: 1px solid var(--link-hover);
 }
 
 section {
